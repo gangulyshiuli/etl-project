@@ -20,12 +20,14 @@ The COVID-19 pandemic as changed how people arouond the world live their daily l
 ## Step 2 - Transform
 
 #### Use the data to create the following tables:
-* MOOC Courses Offered
-* List oof MOOCs
-* MOOC Attributes
-* YouTube Category IDs
-* YouTube Video Data
-* Master Category Table (including both MOOCs and YouTube)
+* EdX Courses Offered (FKs: MOOC, Master Category)
+* Coursera Courses Offered (FKs: MOOC, Master Category)
+* List of MOOCs (FK: MOOC)
+* MOOC Attributes (FK: MOOC)
+* YouTube Video Categories (PK & FK: CategoryID)
+* YouTube Countries (PK & FK: CountryCode)
+* YouTube Video Data (FKs: CategoryID & CountryCode)
+* Master Category Table for YouTube and MOOCs (PK & FK: Master Category)
 
 ## Step 3 - Load
 
